@@ -12,10 +12,12 @@ const User = sequelize.define('user', {
     allowNull: false
   },
   firstName: {
-    type: DataTypes.TEXT
+    type: DataTypes.TEXT,
+    allowNull: false
   },
   lastName: {
-    type: DataTypes.TEXT
+    type: DataTypes.TEXT,
+    allowNull: false
   },
   email: {
     type: DataTypes.STRING,
@@ -23,10 +25,6 @@ const User = sequelize.define('user', {
   },
   password: {
     type: DataTypes.STRING, 
-    allowNull: false
-  },
-  phoneNumber: {
-    type: DataTypes.STRING,
     allowNull: false
   },
   role: {

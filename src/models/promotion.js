@@ -7,10 +7,6 @@ const Promotion = sequelize.define('promotion', {
     url: {
       type: DataTypes.STRING,
       allowNull: false
-    },
-    public_id: {
-      tpe: DataTypes.STRING,
-      allowNull: false
     }
   },
   description: {

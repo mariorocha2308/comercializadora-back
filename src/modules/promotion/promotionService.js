@@ -1,19 +1,15 @@
 // const Promotion = require('../../models/promotion')
-const cloudinary = require('../../helpers/configCloud')
 
-const postPromotion = async (req, res) => {
+const createPromotion = async (req, res) => {
 
-  const { image } = req.body
-    
   try {
-    const upload = cloudinary.uploader.upload(image)
-    res.send(upload)
+    res.send({ sucess: 'It´s work!!'})
   } catch (error) {
-      res.send({ error: '¡Error en el servidor'})
+    res.send({ error: '¡Error en el servidor'})
   }
 
 }
 
 module.exports = {
-  postPromotion
+  createPromotion
 };

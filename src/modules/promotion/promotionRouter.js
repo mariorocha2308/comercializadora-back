@@ -1,8 +1,8 @@
 'use strict';
 
 const router = require('express').Router();
-const { postPromotion } = require("./promotionService");
+const { createPromotion } = require("./promotionService");
 
-router.post('/create/promotion', postPromotion);
+router.post('/create', createPromotion);
 
 module.exports = router;
